@@ -1,7 +1,48 @@
 /* Override a tag's presets by entering its name */
+@font-face {
+    /* font-family is what we are naming the font (like a variable name) */
+    font-family: Truckin;
+    /* src is the location of the font */
+    src: url(fonts/KeeponTruckin.ttf);
+}
+/* The universal selector changes all tags */
+* {
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
 body {
-    background-color: gold;
+    background-color: #DAD2D8;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Top, right, bottom, left. */
+    padding: 20px 30px 20px 30px;
 }
 p {
-    color: purple;
+    color: #31081F;
+    margin: 10px;
+}
+h1 {
+    color: #143642;
+    font-family: Truckin;
+    margin: 20px;
+    text-align: left;
+}
+a:link, a:visited {
+    color: #b36e82;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color:#ffbc37;
+}
+ul, ol {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+/* Classes are used to style individual tags. They start with a period (.) */
+.caption {
+    color: #3b3b9d;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    font-style: italic;
 }
