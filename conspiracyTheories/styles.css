@@ -1,9 +1,34 @@
+@font-face {
+    font-family: SecretFiles;
+    src: url(fonts/secret_files_2/Secret\ Files.ttf);
+}
+@font-face {
+    font-family: EvilConspiracy;
+    src: url(fonts/evil_conspiracy/evil_conspiracy_regular.ttf);
+}
+@font-face {
+    font-family: TopSecret;
+    src: url(fonts/top_secret/top_secret.otf);
+}
 * {
     margin: 0px;
     padding: 0px;
 }
 body {
     background-color: rgb(180, 180, 180);
+}
+h2 {
+    font-family: TopSecret;
+    font-size: 32pt;
+}
+p {
+    font-family: SecretFiles;
+}
+a {
+    text-decoration: none;
+    font-family: SecretFiles;
+    font-style: italic;
+    color: red;
 }
 .classified {
     text-align: center;
@@ -15,7 +40,58 @@ body {
 }
 .main {
     background-image: url(topsecret.png);
+    opacity: 0.5;
+    background-size: cover;
+    height: 500px;
+    max-width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 50px 50px 0px 50px;
+}
+.maintitle {
+    opacity: 1;
+    font-family: EvilConspiracy;
+    font-size: 40pt;
+    color: rgb(0, 0, 0);
 }
 .contacts {
     background-color: rgb(214, 214, 214);
+    font-family: SecretFiles;
+    font-size: 12pt;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    height: 44px;
+    margin-top: 0px;
+    padding: 21px;
+}
+.theories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+.nineeleven {
+    background-color: rgb(204, 204, 204);
+    overflow: hidden;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    border: 4px solid rgb(150, 150, 150);
+}
+.jfk {
+    background-color: rgb(204, 204, 204);
+    overflow: hidden;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    border: 4px solid rgb(150, 150, 150);
+}
+.climatechange {
+    background-color: rgb(204, 204, 204);
+    overflow: hidden;
+    padding: 15px;
+    margin: 20px;
+    text-align: center;
+    border: 4px solid rgb(150, 150, 150);
 }
